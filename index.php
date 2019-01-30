@@ -7,12 +7,12 @@
     <div class="col-sm-3 mt-4 px-4">
       <div class="row">
         <div class="col-sm-12 bg-blue card shadow-sm">
-          <div class="card-body">
+        <a href="http://chehelso.com" alt="فروشگاه اینترنتی چهلسو">  <div class="card-body">
             <p class="card-text text-right">
               فروشگاه اینترنتی چهلسو
               <i class="fas fa-angle-left"></i>
             </p>
-
+            </a>
           </div>
         </div>
 

@@ -92,7 +92,7 @@ ul {
 	color: #222;
 	text-shadow: 1px 1px 1px #FFF;
 	margin: 0 auto 20px;
-	display: block;
+	display: none;
 	clear: both;
  
 	padding-bottom: 10px;
@@ -159,14 +159,14 @@ ol.commentlist li a{
 	visibility:hidden;
 }
 form#commentform {
-	width:600px;
+	/* width:600px;
 	padding: 11px;
 	margin-top: 10px;
 	border: 1px solid#f0f0f0;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	overflow: hidden;
+	overflow: hidden; */
  
 }
 #commentform p , #formp{

@@ -1,11 +1,7 @@
 <?php add_theme_support('menus');
  add_theme_support( 'post-thumbnails' );
-
 if ( function_exists('register_sidebar') ){
-    
-	
-	
-	 register_sidebar( array(
+ 	 register_sidebar( array(
         'name' => __( 'chl text', 'wpb' ),
         'id' => 'sidebar-1',
         'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
@@ -36,8 +32,4 @@ if ( function_exists('register_sidebar') ){
         'after_title' => '',
 	
     ) );
-	
-}
-	?> 
-	
-	
+}?>

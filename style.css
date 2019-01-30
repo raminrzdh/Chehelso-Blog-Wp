@@ -1,0 +1,292 @@
+/*
+Theme Name: Chehelso Blog
+Theme URI: https://chehelso.com/blog
+Author: RaminNooruzzadeh
+Author URI: https://chehelso.com
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url(fontiran.css);
+body {
+	font-family: IRANSans !important;
+	font-weight: 300;
+	 
+	background-color: #E2E2E2;
+    margin: 0;
+    color: #555555;
+    font-size: 0.9em;
+	text-decoration:none;
+ 
+}
+ul {
+  list-style-type: none;
+}
+.post-title a{
+ color: #4a4a4a;
+ text-decoration:none;
+ font-weight:600;
+}
+
+.header-bg{
+    background-color: #f1da5b;
+}
+.bg-color{
+    background-color: #efefef;
+}
+.menu-style a{
+    
+       color: #4a4a4a;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 9px;
+}
+.menu-style a:hover{
+    background-color: white;
+    border-radius: 4em;
+  
+}
+.bg-blue{
+    background-color: #bfebff;
+}
+.bg-footer{
+    background-color: #0f0f0f;
+}
+.footer-font-color{
+    color:#bababa;
+    
+}
+.feature-post{
+    padding: 0.7rem;
+}
+ 
+.select:hover{
+   
+    cursor: pointer;
+    box-shadow:0 0.125rem 2.25rem rgba(0,1,0,0.095)!important;
+}
+ .storyboard{
+     border-radius: 50%;
+    
+
+ }
+ 
+  .widget-full-image{
+    overflow: hidden;
+    border-radius: 2px;
+ }
+ 
+ .meta{
+	 font-size: 13px;
+    margin-right: 25px;
+    border-radius: 7px;
+    margin-left: 25px;
+ padding: 6px;
+ }
+ 
+ 
+ h3#comments {
+	text-align: right;
+	color: #222;
+	text-shadow: 1px 1px 1px #FFF;
+	margin: 0 auto 20px;
+	display: block;
+	clear: both;
+ 
+	padding-bottom: 10px;
+}
+img.avatar {
+    margin-left: 15px;
+    width: 50px;
+    float: right;
+    height: 50px;
+    box-shadow: 0 0 3px #d5d5d5;
+}
+ol.commentlist {
+	    margin: 15px;
+    list-style: none;
+    border-top: 4px dashed #c9f3ff;
+    padding-top: 5px;
+    display: block;
+    clear: both;
+}
+ol.commentlist img{
+	border:none;
+	border-radius:0;
+	padding:0;
+}
+ol.commentlist a {
+	color: #bbb;
+	text-decoration: none;
+	font-style: none;
+}
+ol.commentlist li{
+	    font-size: 14px;
+    padding: 11px;
+    border: 1px #fafafa solid;
+    padding-right: 15px;
+    margin-top: 20px;
+    /* border: 4px #313131; */
+    border-radius: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 10px;
+    overflow: hidden;
+    /* width: 625px; */
+}
+ol.commentlist li li{
+	    width: 570px;
+    border: 1px #f1f1f1 solid;
+ س
+}
+ol.commentlist li p{
+	width: 80%;
+	font-size: 14px;
+	margin-right: 100px;
+}
+ol.commentlist li a{
+	color: #888;
+	font-size: 14px;
+}
+#respond {
+	margin: 0 auto 15px;
+	width: 600px;
+	clear: both;
+	display: block;
+}
+#respond h3{
+	visibility:hidden;
+}
+form#commentform {
+	width:600px;
+	padding: 11px;
+	margin-top: 10px;
+	border: 1px solid#f0f0f0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	overflow: hidden;
+ 
+}
+#commentform p , #formp{
+	padding-right: 10px;
+	margin-bottom:5px;
+	line-height:2;
+	width:100%;
+	float:right;
+}
+#commentform label {
+	color:#999;
+	font-size:14px;
+	margin-right:10px;
+	float:right;
+}
+#commentform input , #forminput{
+	    float: right;
+    display: block;
+    border: 1px solid #e9e9e9;
+    width: 170px;
+    padding: 3px 10px;
+    /* height: 30px; */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    /* -webkit-box-shadow: inset 0px 0px 5px #00d2ff; */
+    /* box-shadow: inset 0px 0px 5px #00d2ff; */
+    background: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 13px;
+}
+#commentform input:focus , #forminput:focus {
+	 
+}
+#commentform textarea , #formtextarea {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	color:#333;
+	padding:4px 6px;
+	width: 300px;
+	height: 180px;
+	 
+	font-size: 17px;
+	line-height: 20px;
+	float: right;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#commentform textarea:focus , #formtextarea:focus {
+	display: block;
+	clear: both;
+	margin: 10px auto 0;
+	width: 360px;
+	padding: 10px 15px;
+	height: 200px;
+	border: none;
+ 
+	 
+}
+#commentform #submit , #formsubmit {
+border-bottom: 1px dashed #00d2ff; */
+    border-radius: 5px 5px 5px 5px;
+    /* box-shadow: 0px 0px 0px 1px #00d2ff inset, 0px 1px 3px #00d2ff; */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 18px 0 0 4px;
+    color: #000;
+    padding: 3px 15px;
+    /* float: right; */
+    /* font-size: 16px; */
+	 
+}
+#commentbox .chalt {
+	background: #fff;
+	padding: 11px;
+	border: 3px solid #dad6d6;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+ .widget-full-image{
+    overflow: hidden;
+    border-radius: .25rem;
+    object-fit: cover;
+ }
+ .widget-full-image a:hover{
+
+    opacity: 0.5;
+ }
+   .border-4{border:4px solid #cecece!important}
+
+ .title-guide-buy{
+    font-size: 13px;
+    font-weight: 500;
+ 
+    color: #b1b1b1;
+ }
+ 
+.guide-buy-img img
+{
+padding:0;
+width: 70%;
+border-radius:50%;
+border:4px solid #cecece;
+margin:10px;
+}
+.card-horizontal {
+    /*display: flex;*/
+    flex: 1 1 auto;
+}
+.w-60{
+	width:60%!important
+}
+ 

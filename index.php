@@ -112,9 +112,6 @@ $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         <div class="col-sm-12 mt-4 ">
           <div class="card shadow-sm ">
-
-
-
             <div class="row card-horizontal rtl">
               <div class="col-md-4  order-first  card-img-right card-img round">
                 <?php the_post_thumbnail('medium') ?>

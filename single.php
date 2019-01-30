@@ -19,16 +19,16 @@
 				 
  	<?php while(have_posts()) : the_post(); ?>
 		              
-			<h2 class="post-title p-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="post-title  text-right p-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			
-			<p class="meta p-1 ">نوشته  <a href="#"><?php the_author_posts_link(); ?></a> زمان <?php the_time('F jS, Y'); ?>
+			<p class="meta p-1  text-right ">نوشته  <a href="#"><?php the_author_posts_link(); ?></a> زمان <?php the_time('F jS, Y'); ?>
 			&nbsp;&bull;&nbsp; <a href="<?php comments_link(); ?>" class="comments">
 			<?php comments_number('0 نظر','1 نظر','% responses'); ?>
 		</a> &nbsp;&bull;&nbsp;  </p>
 			<div class="entry p-4"> <a href="<?php the_permalink(); ?>" class="image image-full">
 				<?php the_post_thumbnail('medium'); ?>
 			</a>
-				<div class="card-text "><?php the_content('Read More'); ?></div>
+				<div class="card-text  text-right "><?php the_content('Read More'); ?></div>
 			</div>
 	 
 	<?php endwhile; ?>

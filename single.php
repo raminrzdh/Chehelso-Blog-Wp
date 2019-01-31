@@ -25,7 +25,7 @@
 			&nbsp;&bull;&nbsp; <a href="<?php comments_link(); ?>" class="comments">
 			<?php comments_number('0 نظر','1 نظر','% responses'); ?>
 		</a> &nbsp;&bull;&nbsp;  </p>
-			<div class="entry p-4"> <a href="<?php the_permalink(); ?>" class="image image-full">
+			<div class="entry p-4  text-right "> <a href="<?php the_permalink(); ?>" class="image image-full">
 				<?php the_post_thumbnail('medium'); ?>
 			</a>
 				<div class="card-text  text-right "><?php the_content('Read More'); ?></div>

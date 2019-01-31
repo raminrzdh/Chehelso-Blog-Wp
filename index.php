@@ -114,7 +114,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
           <div class="card shadow-sm ">
             <div class="row card-horizontal rtl">
               <div class="col-md-4  order-first  card-img-right card-img round">
-                <?php  if ( has_post_thumbnail() ) { the_post_thumbnail();} ?>
+                <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium');} ?>
               </div>
 
               <div class="col-md-8">

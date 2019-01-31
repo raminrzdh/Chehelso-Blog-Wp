@@ -28,7 +28,7 @@
 			<div class="entry p-4  text-right "> <a href="<?php the_permalink(); ?>" class="image image-full">
 				<?php the_post_thumbnail('medium'); ?>
 			</a>
-				<div class="card-text  text-right "><?php the_content('Read More'); ?></div>
+				<div class="card-text rtl text-right "><?php the_content('Read More'); ?></div>
 			</div>
 	 
 	<?php endwhile; ?>

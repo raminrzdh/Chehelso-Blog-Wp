@@ -286,4 +286,6 @@ margin:10px;
 .w-60{
 	width:60%!important
 }
- 
+ .overhidden{
+    overflow: hidden;
+ }

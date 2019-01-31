@@ -20,6 +20,9 @@ body {
 	text-decoration:none;
  
 }
+a:hover{
+    text-decoration: none;
+}
 ul {
   list-style-type: none;
 }
@@ -288,4 +291,15 @@ margin:10px;
 }
  .overhidden{
     overflow: hidden;
+ }
+ .btn-read-more{
+    color: #404040;
+    background-color: #dedede;
+    border-radius: 100px;
+    font-size: 11px;
+    margin: 0;
+    float: left;
+ }
+ .card-title a{
+    color: #333333;
  }

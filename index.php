@@ -126,7 +126,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                   <p class="card-text ">
                     <?php echo get_the_excerpt();?>
                   </p>
-                  <a href="<?php the_permalink(); ?>" class="btn btn-primary">بیشتر</a>
+                  <a href="<?php the_permalink(); ?>" class="btn btn-read-more">بیشتر</a>
 
                 </div>
               </div>

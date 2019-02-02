@@ -1,4 +1,15 @@
 <?php add_theme_support('menus');
+function register_my_menus() {
+    register_nav_menus(
+    array(
+    'top-menu' => __( 'navbar' ),
+    'main-menu' => __( 'sidebar' ),
+    'footer-menu' => __( 'footer' )
+    )
+    );
+    }
+    add_action( 'init', 'register_my_menus' );
+
  add_theme_support( 'post-thumbnails' );
 if ( function_exists('register_sidebar') ){
  	 register_sidebar( array(

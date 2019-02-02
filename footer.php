@@ -16,10 +16,31 @@
       </div>
       <div class="col-sm-3">
         <ul class="my-3 footer-font-color text-right">
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
+      
+        <?php
+
+$defaults = array(
+	'theme_location'  => 'footer-menu',
+	'menu'            => '',
+	'container'       => '',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'p-2 text-dark',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="menu-main-menu" class="navbar-nav mr-auto menu-style menu">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
+
+wp_nav_menu( $defaults );
+
+?>
         </ul>
       </div>
      

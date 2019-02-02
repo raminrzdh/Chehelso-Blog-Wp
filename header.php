@@ -35,8 +35,8 @@
         <?php
 
 $defaults = array(
-	'theme_location'  => '',
-	'menu'            => 'topـmenu',
+	'theme_location'  => 'top-menu',
+	'menu'            => '',
 	'container'       => '',
 	'container_class' => '',
 	'container_id'    => '',
@@ -58,6 +58,7 @@ wp_nav_menu( $defaults );
 ?>
         <!--  <ul class="navbar-nav mr-auto">
              <li class="nav-item">
+
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">

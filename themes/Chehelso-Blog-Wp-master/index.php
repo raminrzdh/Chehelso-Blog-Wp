@@ -39,49 +39,10 @@
       </div>
     </div>
     <div class="col-sm-9 mt-4 order-first order-md-last">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="card shadow-sm">
-            <img class="card-img-top " src="<?php bloginfo('template_url'); ?>/img.png" alt="Card image" />
-            <div class="card-body feature-post">
-              <p class="card-text text-right">
-                اجرای استفاده از پوسته فرزند در وردپرس، ماجرایی ن که این
-                آموزش
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="card  shadow-sm">
-
-            <img class="card-img-top " src="<?php bloginfo('template_url'); ?>/img.png" alt="Card image" />
-
-
-
-            <div class="card-body feature-post">
-              <p class="card-text text-right">
-                اجرای استفاده از پوسته فرزند در وردپرس، ماجرایی ن که این
-                آموزش
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="card shadow-sm">
-            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/img.png" alt="" />
-            <div class="card-img-overlay">
-              <span class="badge badge-pill badge-danger">جدید</span>
-            </div>
-            <div class="card-body feature-post">
-              <p class="card-text text-right">
-                محل قرار گیری اخرین پست از وبلاگ چهلسو در این قسمت
-              </p>
-
-              <!-- <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <?php if ( is_active_sidebar( 'home_feature_post' ) ) : ?>
+		  <?php dynamic_sidebar( 'home_feature_post' ); ?>
+      <?php endif; ?>
 
 
       <div class="row">

@@ -1,6 +1,6 @@
 <footer class=" px-md-4  bg-footer  shadow-sm-sm">
     <div class="container">
-	<div class="row">
+	<div class="row"> 
 	 <div class="col-sm-6 my-3">
         <img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="w-40" alt="chehelso" title="blog" />
       </div>

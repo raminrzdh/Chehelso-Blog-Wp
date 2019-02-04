@@ -1,0 +1,7 @@
+# wp core file
+uploads/
+upgrade/
+languages/
+!index.php
+ 
+ 

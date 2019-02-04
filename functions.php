@@ -4,7 +4,8 @@ function register_my_menus() {
     array(
     'top-menu' => __( 'navbar' ),
     'main-menu' => __( 'sidebar' ),
-    'footer-menu' => __( 'footer' )
+    'footer-menu-right' => __( 'right footer' ),
+    'footer-menu-left' => __( 'left footer' )
     )
     );
     }

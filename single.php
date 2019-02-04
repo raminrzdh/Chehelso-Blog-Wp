@@ -9,7 +9,7 @@
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('chl img ads')) : ?>
         <?php endif; ?>
         </div>
-		<div class="col-sm-9 mt-3 order-last order-md-last ">
+		<div class="col-sm-9 mt-3">
          <div class="row">
             <div class="col-sm-12 ">
               <div class="card ">
@@ -42,7 +42,7 @@
              
           </div>
         </div>
-       
+       h
       </div>
     </div>
     <div class="bg-blue border-bottom shadow-sm-sm">

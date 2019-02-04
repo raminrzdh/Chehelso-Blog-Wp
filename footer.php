@@ -4,28 +4,16 @@
 	 <div class="col-sm-6 my-3">
         <img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="w-40" alt="chehelso" title="blog" />
       </div>
-      <div class="col-sm-3">
-        <ul class="my-3  footer-font-color text-right ">
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-          <li><a class="footer-font-color" href="#">چطور</a></li>
-        </ul>
-
-        <!-- <h5 class="my-0 d-flex ml-20 mr-md-auto font-weight-normal">chehelso blog</h5> -->
-      </div>
-      <div class="col-sm-3">
-        <ul class="my-3 footer-font-color text-right">
       
+        
         <?php
-
 $defaults = array(
-	'theme_location'  => 'footer-menu',
+	'theme_location'  => 'footer-menu-left',
 	'menu'            => '',
-	'container'       => '',
-	'container_class' => '',
+	'container'       => 'div',
+	'container_class' => 'col-sm-3 col-6 footer-container',
 	'container_id'    => '',
-	'menu_class'      => 'p-2 text-dark',
+	'menu_class'      => '',
 	'menu_id'         => '',
 	'echo'            => true,
 	'fallback_cb'     => 'wp_page_menu',
@@ -33,17 +21,34 @@ $defaults = array(
 	'after'           => '',
 	'link_before'     => '',
 	'link_after'      => '',
-	'items_wrap'      => '<ul id="menu-main-menu" class="navbar-nav mr-auto menu-style menu">%3$s</ul>',
+	'items_wrap'      => '<ul id="left-footer" class="my-3 text-right">%3$s</ul>',
 	'depth'           => 0,
 	'walker'          => ''
 );
+wp_nav_menu( $defaults );
 
+$defaults = array(
+	'theme_location'  => 'footer-menu-right',
+	'menu'            => '',
+	'container'       => 'div',
+	'container_class' => 'col-sm-3 col-6 footer-container',
+	'container_id'    => '',
+	'menu_class'      => '',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="right-footer" class="my-3 text-right">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
 wp_nav_menu( $defaults );
 
 ?>
-        </ul>
-      </div>
-     
+
     </div>
 	</div>
 	<div class="container">

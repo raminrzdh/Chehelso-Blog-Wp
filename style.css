@@ -57,10 +57,10 @@ ul {
 .bg-footer{
     background-color: #0f0f0f;
 }
-.footer-font-color{
+div.footer-container a{
     color:#bababa;
-    
 }
+
 .feature-post{
     padding: 0.7rem;
 }
@@ -153,7 +153,7 @@ ol.commentlist li a{
 }
 #respond {
 	margin: 0 auto 15px;
-	width: 600px;
+	/*width: 600px;*/
 	clear: both;
 	display: block;
 }
@@ -176,13 +176,14 @@ form#commentform {
 	margin-bottom:5px;
 	line-height:2;
 	width:100%;
-	float:right;
+    float:right;
+    text-align: right;
 }
 #commentform label {
 	color:#999;
 	font-size:14px;
-	margin-right:10px;
-	float:right;
+    margin-right:10px;
+	display: block;
 }
 #commentform input , #forminput{
 	    float: right;
@@ -211,12 +212,12 @@ form#commentform {
 	-webkit-border-radius: 6px;
 	color:#333;
 	padding:4px 6px;
-	width: 300px;
+	width: 90%;
 	height: 180px;
 	 
 	font-size: 17px;
 	line-height: 20px;
-	float: right;
+	
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
@@ -224,15 +225,7 @@ form#commentform {
 	transition: all 0.5s ease-in-out;
 }
 #commentform textarea:focus , #formtextarea:focus {
-	display: block;
 	clear: both;
-	margin: 10px auto 0;
-	width: 360px;
-	padding: 10px 15px;
-	height: 200px;
-	border: none;
- 
-	 
 }
 #commentform #submit , #formsubmit {
 border-bottom: 1px dashed #00d2ff; 
@@ -302,4 +295,23 @@ margin:10px;
  }
  .card-title a{
     color: #333333;
+ }
+ .card-text.rtl.text-right img {
+     width: 100%;
+ }
+ /*footer*/
+ .col-sm-6.my-3 img {
+     float: right;
+ }
+
+
+ /***************** mobile ******************/
+ @media only screen and (max-width:767px) {
+    #respond {
+        padding: 10px;
+    }
+    .col-sm-9.mt-3 {
+        order: -1;
+    }
+
  }

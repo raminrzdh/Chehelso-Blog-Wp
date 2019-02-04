@@ -304,6 +304,22 @@ margin:10px;
      float: right;
  }
 
+ /* feature posts */
+ h4.entry-title {
+    padding: 10px;
+    margin-bottom: 0;
+ }
+ .entry-meta {
+     padding: 10px;
+ }
+ .entry-image .card-img-top {
+     height: 150px;
+     object-fit: cover;
+ }
+ .entry-summary.feature-post {
+     height: 85px;
+ }
+
 
  /***************** mobile ******************/
  @media only screen and (max-width:767px) {
@@ -313,5 +329,7 @@ margin:10px;
     .col-sm-9.mt-3 {
         order: -1;
     }
-
+    .entry-image .card-img-top {
+        height: 250px;
+    }
  }

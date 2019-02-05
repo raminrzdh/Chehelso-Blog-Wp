@@ -281,7 +281,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         'atcat' => false,
         'thumb_size' => 'thumbnail',
         'attag' => false,
-        'excerpt_length' => 10,
+        'excerpt_length' => 55,
         'excerpt_readmore' => __('Read more &rarr;', 'upw'),
         'order' => 'DESC',
         'orderby' => 'date',

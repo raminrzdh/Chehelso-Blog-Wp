@@ -13,7 +13,7 @@ get_header(); ?>
  	
 	  
   <body class="bg-color">
-    <div class="container">
+    <div class="container mt-4">
       <div class="row d-inline-flex right-content-start bd-highlight mb-3">
         <div class="col-sm-12">
          <div class="row">
@@ -25,7 +25,7 @@ get_header(); ?>
 				 
  	 
 	<?php while(have_posts()) : the_post(); ?>
-		<div class="post">
+		<div class="post rtl">
 			<h2 class="title"><?php the_title(); ?></h2>		
 				<?php the_content('Read More'); ?>
 			</div>
@@ -43,19 +43,7 @@ get_header(); ?>
        
       </div>
     </div>
-    <div class="bg-blue border-bottom shadow-sm-sm">
-      <div class="row container text-right">
-        <div class="col-sm-5">
-           <ul>
-          <!---   <li class="storyboard">
-<img src="<?php bloginfo('template_url'); ?>/_text.png" class="rounded-circle" alt="title_post">
-           </li>--->
-           </ul>
-             
-        </div>
-      </div>
-    </div>
-  </body>
+     </body>
   
 	
 	

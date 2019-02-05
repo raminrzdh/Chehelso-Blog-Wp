@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container-fluid px-2 px-sm-5">
   <div class="row right-content-start bd-highlight mb-3">
 
 
@@ -84,7 +84,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                     <a href="<?php the_permalink(); ?>">
                       <?php the_title(); ?></a>
                   </h4>
-                  <p class="card-text ">
+                  <p class="card-text short-text-post">
                     <?php echo get_the_excerpt();?>
                   </p>
                   <a href="<?php the_permalink(); ?>" class="btn btn-read-more">بیشتر</a>

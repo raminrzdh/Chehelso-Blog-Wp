@@ -10,15 +10,7 @@ function register_my_menus() {
     );
     }
     add_action( 'init', 'register_my_menus' );
-    function custom_excerpt( $count ) {
-        $permalink = get_permalink($post->ID);
-        $excerpt = get_the_content();
-        $excerpt = strip_tags($excerpt);
-        $excerpt = substr($excerpt, 0, $count);
-        $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-        //$excerpt = '<p>'.$excerpt.'... <a href="'.$permalink.'">بیشتر</a></p>';
-        return $excerpt;
-        }
+    
 
  add_theme_support( 'post-thumbnails' );
 if ( function_exists('register_sidebar') ){

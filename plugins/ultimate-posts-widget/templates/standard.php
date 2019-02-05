@@ -38,7 +38,7 @@
 
             <?php if (get_the_title() && $instance['show_title']) : ?>
               <h4 class="entry-title text-right">
-                <a href="<?php the_permalink(); ?>" rel="bookmark">
+                <a class="feature-post-title" href="<?php the_permalink(); ?>" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
               </h4>
@@ -84,7 +84,7 @@
           <?php if ($instance['show_excerpt']) : ?>
             <div class="entry-summary text-right card-body feature-post">
               <p class="card-text">
-                <?php echo custom_excerpt(100); ?>
+              <?php echo get_the_excerpt(); ?>
                 <?php if ($instance['show_readmore']) : ?>
                   <a href="<?php the_permalink(); ?>" class="more-link"><?php echo ('بیشتر'); ?></a>
                 <?php endif; ?>

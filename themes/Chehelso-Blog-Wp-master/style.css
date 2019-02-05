@@ -390,6 +390,9 @@ a.feature-post-title:hover {
     float: right;
   }
 }
+.border-top-footer{
+  border-top: 1px solid #171717!important
+}
 /*************** tablet *****************/
 @media (min-width: 768px) and (max-width: 1024px) {
     .card-block p.short-text-post {
@@ -406,3 +409,4 @@ a.feature-post-title:hover {
         height: 160px;
     }
 }
+

@@ -2,7 +2,7 @@
     <div class="container">
 	<div class="row"> 
 	 <div class="col-sm-6 my-3">
-        <img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="w-40" alt="chehelso" title="blog" />
+        <img src="<?php bloginfo('template_url'); ?>/img/logo-2.svg" class="w-50" alt="chehelso" title="blog" />
       </div>
       
         
@@ -51,15 +51,17 @@ wp_nav_menu( $defaults );
 
     </div>
 	</div>
-	<div class="container">
-    <div class="row border-top  pt-3">
+	<div class="container-fluid">
+    <div class="row border-top-footer  pt-3">
       
       <div class="col-sm-3 text-center">
-          <i class="fab fa-instagram fa-2x px-3"></i> <i class="fab fa-telegram fa-2x px-3"></i> <i class="fab fa-twitter fa-2x px-3"></i>
+			<a href="https://www.instagram.com/chehelso">	<i class="fab fa-instagram fa-2x px-3"></i></a>
+					<a href="https://www.chehelso.com/#"> <i class="fab fa-telegram fa-2x px-3"></i></a>
+					 <a href="https://twitter.com/chehelso97"> <i class="fab fa-twitter fa-2x px-3"></i></a>
       </div>
-	  <div class="col-sm-9 text-right">
+	  <div class="col-sm-9 rtl">
         <p>
-          تمامی حقوق مادی و معنوی این وبسایت متعلق بهوشمندسازان مسیر آینده می
+          تمامی حقوق مادی و معنوی این وبسایت متعلق به هوشمندسازان مسیر آینده می
           باشد و هر گونه کپی برداری پیگرد قانونی دارد.
         </p>
       </div>

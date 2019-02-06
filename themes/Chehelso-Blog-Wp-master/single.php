@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-    <div class="container-fluid px-2 px-sm-5">
+    <div class="container-fluid px-sm-5">
       <div class="row ">
          <div class="col-sm-3 ">
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('chl text')) : ?>

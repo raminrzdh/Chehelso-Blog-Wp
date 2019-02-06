@@ -53,6 +53,15 @@ if ( function_exists('register_sidebar') ){
 		'after_widget'  => '',
 		'before_title'  => '',
 		'after_title'   => '',
+    ) );
+    
+    register_sidebar( array(
+		'name'          => 'Home Bottom Slider',
+		'id'            => 'home_bottom_slider',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
 	) );
 }
 ?>

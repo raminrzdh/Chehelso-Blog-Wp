@@ -315,16 +315,19 @@ form#commentform {
 .footer-container li.menu-item {
     padding-bottom: 5px;
 }
+.border-top-footer{
+  border-top: 1px solid #171717!important
+}
 
 /* feature posts */
 h4.entry-title {
-  padding: 10px;
+  padding: 10px 15px;
   margin-bottom: 0;
 }
 .entry-meta {
   padding: 10px;
 }
-.entry-image .card-img-top {
+.top-feature-post .card-img-top {
   height: 200px;
   object-fit: cover;
 }
@@ -332,9 +335,8 @@ h4.entry-title {
   height: 85px;
 }
 a.feature-post-title {
-  font-size: 16px;
+  font-size: 14px;
   color: #767676;
-  direction: rtl;
   display: block;
   overflow: hidden;
   position: relative; 
@@ -345,7 +347,7 @@ a.feature-post-title {
   width: 100%;
   padding-left: 1em;
 }
-a.feature-post-title:before {
+/* a.feature-post-title:before {
   content: '...';
   position: absolute;
   left: 0;
@@ -360,11 +362,53 @@ a.feature-post-title:after {
   height: 1em;
   margin-top: 0.2em;
   background: white;
-}
+} */
 a.feature-post-title:hover {
   color: #000;
 }
 /****/
+/* homepage bottom slider */
+a.slider-post-title {
+    font-size: 14px;
+    color: #767676;
+    display: block;
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.5em;
+    height: 3em; 
+    text-align: center;  
+    margin-right: -1em;
+    width: 100%;
+    padding-left: 1em;
+}
+  a.slider-post-title:hover {
+    color: #000;
+}
+.upw-posts.bg-blue img {
+    border: none;
+}
+.bottom-slider .card-img-top {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+}
+
+/**************** small screen mobile only ***************/
+/* homepage bottom slider */
+@media only screen and (max-width: 380px) {
+  .bottom-slider .card-img-top {
+    width: 240px;
+    height: 240px;
+  }
+}
+/**************** big screen mobile only *************/
+@media (min-width: 381px) and (max-width: 767px) {
+  /* homepage bottom slider */
+  .bottom-slider .card-img-top {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 /***************** mobile ******************/
 @media only screen and (max-width: 767px) {
@@ -374,7 +418,7 @@ a.feature-post-title:hover {
   .col-sm-9.mt-3 {
     order: -1;
   }
-  .entry-image .card-img-top {
+  .top-feature-post .card-img-top {
     height: 250px;
   }
   article.col-sm-4 {
@@ -389,24 +433,28 @@ a.feature-post-title:hover {
   .col-sm-6.my-3 img {
     float: right;
   }
-}
-.border-top-footer{
-  border-top: 1px solid #171717!important
+  /* homepage bottom slider */
+  
 }
 /*************** tablet *****************/
 @media (min-width: 768px) and (max-width: 1024px) {
     .card-block p.short-text-post {
         min-height: 40px;
-        max-height: 66px;
+        max-height: 65px;
         overflow: hidden;
     }
     .btn-read-more {
         bottom: 10px;
         width: 15%;
     }
-    .entry-image .card-img-top {
+    .top-feature-post .card-img-top {
         object-fit: scale-down;
         height: 160px;
     }
+     /* homepage bottom slider */
+  .bottom-slider .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
 }
-

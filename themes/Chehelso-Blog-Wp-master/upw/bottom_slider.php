@@ -12,20 +12,20 @@
   </div>
 <?php endif; ?>
 
-<div class="row upw-posts hfeed top-feature-post">
+<div class="container-fluid row upw-posts hfeed bg-blue border-bottom shadow-sm mb-3 py-4 bottom-slider" style="margin-right:0; margin-left:0;">
 
   <?php if ($upw_query->have_posts()) : ?>
 
       <?php while ($upw_query->have_posts()) : $upw_query->the_post(); ?>
 
         <?php $current_post = ($post->ID == $current_post_id && is_single()) ? 'active' : ''; ?>
-        <?php $current_post .= "col-sm-4"; ?>
+        <?php $current_post .= "col-sm-3"; ?>
         <article <?php post_class($current_post); ?>>
-          <div class="card shadow-sm">
+          
           <header>
 
             <?php if (current_theme_supports('post-thumbnails') && $instance['show_thumbnail'] && has_post_thumbnail()) : ?>
-              <div class="entry-image">
+              <div class="entry-image text-center guide-buy-img">
                 <a href="<?php the_permalink(); ?>" rel="bookmark">
                   <?php          
                   $post_thumbnail_id = get_post_thumbnail_id();
@@ -38,7 +38,7 @@
 
             <?php if (get_the_title() && $instance['show_title']) : ?>
               <h4 class="entry-title text-right">
-                <a class="feature-post-title rtl" href="<?php the_permalink(); ?>" rel="bookmark">
+                <a class="slider-post-title rtl" href="<?php the_permalink(); ?>" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
               </h4>
@@ -144,7 +144,7 @@
             <?php endif; ?>
 
           </footer>
-          </div>
+          
         </article>
 
       <?php endwhile; ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container-fluid px-2 px-sm-5">
+<div class="container-fluid px-sm-5">
   <div class="row right-content-start bd-highlight mb-3">
 
 
@@ -109,22 +109,11 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
 
 
-
   </div>
 </div>
-</div>
-</div>
-<div class="bg-blue border-bottom shadow-sm-sm">
-  <div class="row container text-right">
-    <div class="col-sm-5">
-      <ul>
-        <!---   <li class="storyboard">
-<img src="<?php bloginfo('template_url'); ?>/_text.png" class="rounded-circle" alt="title_post">
-           </li>--->
-      </ul>
+<?php if ( is_active_sidebar( 'home_bottom_slider' ) ) : ?>
+          <?php dynamic_sidebar( 'home_bottom_slider' ); ?>
+      <?php endif; ?>
 
-    </div>
-  </div>
-</div>
 </body>
 <?php get_footer(); ?>

@@ -10,9 +10,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bootstrap-rtl.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/upw/carousel-swipe.js"></script>
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/flickity.css" media="screen" />
+  <script src="<?php bloginfo('template_url'); ?>/flickity.min.js"></script>
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
     <?php bloginfo('title'); ?>
